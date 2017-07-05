@@ -25,7 +25,7 @@ public class BulletController : MonoBehaviour {
         //Destroys bullets after a given time period so that the engine isn't overloaded with objects 
         lifetime -= Time.deltaTime;
         if (lifetime <= 0)
-            Destroy(gameObject); 
+            Destroy(gameObject);
 	}
 
     void OnCollisionEnter(Collision other)
